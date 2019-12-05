@@ -24,20 +24,34 @@
 <v t=".20191205222631.1"><vh>Ch1</vh>
 <v t=".20191205222631.2"><vh>Ch1</vh></v>
 </v>
-<v t=".20191205223224.1"><vh>Ch3</vh>
-<v t=".20191205223224.2"><vh>Ch3內容</vh>
+<v t=".20191205223224.1"><vh>Ch2</vh>
+<v t=".20191205223224.2"><vh>Ch2內容1</vh>
 <v t=".20191205223224.3"><vh>內容</vh></v>
 </v>
-<v t=".20191205223224.4"><vh>Ch3影片</vh>
-<v t=".20191205223224.5"><vh>影片</vh></v>
+<v t=".20191205223224.4"><vh>Ch2內容2</vh>
+<v t=".20191205223224.5"><vh>內容</vh></v>
+</v>
+<v t=".20191206025510.1"><vh>Ch2內容3</vh>
+<v t=".20191206025510.2"><vh>內容</vh></v>
+</v>
+</v>
+<v t=".20191206023514.1"><vh>Ch3</vh>
+<v t=".20191206023514.2"><vh>Ch3內容</vh>
+<v t=".20191206023514.3"><vh>內容</vh></v>
+</v>
+<v t=".20191206023514.4"><vh>Ch3影片</vh>
+<v t=".20191206023514.5"><vh>影片</vh></v>
 </v>
 </v>
 <v t="leo.20191205232925.1"><vh>Ch4</vh>
 <v t="leo.20191205232925.2"><vh>Ch4內容</vh>
 <v t="leo.20191205232925.3"><vh>內容</vh></v>
 </v>
-<v t="leo.20191205233453.1"><vh>Ch4延伸</vh>
+<v t="leo.20191205233453.1"><vh>Ch4延伸1</vh>
 <v t="leo.20191205233453.2"><vh>內容</vh></v>
+</v>
+<v t=".20191206023422.1"><vh>Ch4延伸2</vh>
+<v t=".20191206023422.2"><vh>內容</vh></v>
 </v>
 </v>
 <v t="leo.20180902120523.11"><vh>快捷鍵</vh>
@@ -104,15 +118,18 @@
 
 						
 </t>
-<t tx=".20191205223224.3">## CHAPTER 3  二維草圖
-## TWO DIMENSIONAL SKETCHING
+<t tx=".20191205223224.3">## CHAPTER 2  入門
+## GETTING STARTED
 
-### 二維草圖在NX12中用於創建實體特徵
+*  啟動NX12並打開文件、列印、儲存和關閉文件
 
-1.繪製幾何體--利用直線圓弧多邊形等構成草圖形狀
+* NX12介面
 
-2.定義幾何關係--給予水平垂直或者角度等相關約束條件限制圖形位置及大小
+* 圖層
 
+* 座標系統
+
+* 工具列
 
  [對應網站](https://s40723147.github.io/cad2019ag4/content/NX12.html)
 </t>
@@ -127,8 +144,92 @@
 
 						
 </t>
-<t tx=".20191205223224.5">### Example   3.6.1  Circular Base
+<t tx=".20191205223224.5">## 圖層
+
+* 工作
+
+* 可選
+
+* 僅可見
+
+* 不可見
+
+ [對應網站](https://s40723147.github.io/cad2019ag4/content/NX12.html)</t>
+<t tx=".20191206023422.1">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+&lt;!-- 請注意, @others 不可以內縮 --&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+
+						
+</t>
+<t tx=".20191206023422.2">### Remove Features include:
+* Hole                                        孔
+* Pocket                                   口袋
+* Slot                                          插槽
+* Groove                                  凹槽</t>
+<t tx=".20191206023514.1">&lt;section&gt;
+@others
+&lt;/section&gt;
+
+</t>
+<t tx=".20191206023514.2">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+&lt;!-- 請注意, @others 不可以內縮 --&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+
+						
+</t>
+<t tx=".20191206023514.3">## CHAPTER 3  二維草圖
+## TWO DIMENSIONAL SKETCHING
+
+### 二維草圖在NX12中用於創建實體特徵
+
+1.繪製幾何體--利用直線圓弧多邊形等構成草圖形狀
+
+2.定義幾何關係--給予水平垂直或者角度等相關約束條件限制圖形位置及大小
+
+
+ [對應網站](https://s40723147.github.io/cad2019ag4/content/NX12.html)
+</t>
+<t tx=".20191206023514.4">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+&lt;!-- 請注意, @others 不可以內縮 --&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+
+						
+</t>
+<t tx=".20191206023514.5">### Example   3.6.1  Circular Base
 &lt;iframe src="https://player.vimeo.com/video/377343284" width="640" height="564" frameborder="0" allow="autoplay; fullscreen" allowfullscreen&gt;&lt;/iframe&gt;</t>
+<t tx=".20191206025510.1">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+&lt;!-- 請注意, @others 不可以內縮 --&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+
+						
+</t>
+<t tx=".20191206025510.2">## 座標系統
+
+* 絕對坐標系（CSYS）
+
+* 工作坐標系（WCS）
+
+ [對應網站](https://s40723147.github.io/cad2019ag4/content/NX12.html)</t>
 <t tx="leo.20180902120523.1"></t>
 <t tx="leo.20180902120523.10">## cad2019ag4 NX12 章節重點
 
@@ -453,10 +554,6 @@ vertical: body pane on the botton</t>
 * Sweep along Guide           掃掠
 * Tube                                    管
 * Styled Sweep                     樣式掃描
-### Remove Features include:
-* Hole                                        孔
-* Pocket                                   口袋
-* Slot                                          插槽
-* Groove                                  凹槽</t>
+</t>
 </tnodes>
 </leo_file>
