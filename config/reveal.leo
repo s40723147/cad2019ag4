@@ -18,14 +18,19 @@
 <v t="leo.20180902120523.6"><vh>body</vh>
 <v t="leo.20180902120523.7"><vh>reveal div</vh>
 <v t="leo.20180902120523.8"><vh>slides div</vh>
-<v t="leo.20180902120523.9"><vh>1</vh>
+<v t="leo.20180902120523.9"><vh>投影片封面</vh>
 <v t="leo.20180902120523.10"><vh>封面投影片內容</vh></v>
 </v>
-<v t="leo.20191205214713.1"><vh>2</vh>
-<v t="leo.20191205214713.2"><vh>封面投影片內容</vh></v>
+<v t=".20191205222631.1"><vh>Ch1</vh>
+<v t=".20191205222631.2"><vh>Ch1</vh></v>
 </v>
-<v t="leo.20191205215528.1"><vh>3</vh>
-<v t="leo.20191205215528.2"><vh>封面投影片內容</vh></v>
+<v t=".20191205223224.1"><vh>Ch3</vh>
+<v t=".20191205223224.2"><vh>Ch3內容</vh>
+<v t=".20191205223224.3"><vh>內容</vh></v>
+</v>
+<v t=".20191205223224.4"><vh>Ch3影片</vh>
+<v t=".20191205223224.5"><vh>影片</vh></v>
+</v>
 </v>
 <v t="leo.20180902120523.11"><vh>快捷鍵</vh>
 <v t="leo.20180902120523.12"><vh>投影片快捷鍵</vh></v>
@@ -50,6 +55,72 @@
 </v>
 </vnodes>
 <tnodes>
+<t tx=".20191205222631.1">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+						
+</t>
+<t tx=".20191205222631.2">## CHAPTER 1  簡介
+## INTRODUCTION
+
+* CAD / CAM 開發的簡歷史
+
+* CAD / CAM / CAE 的定義
+
+* 各章節教程摘要
+
+ [對應網站](https://s40723147.github.io/cad2019ag4/content/NX12.html)
+
+
+
+
+
+</t>
+<t tx=".20191205223224.1">&lt;section&gt;
+@others
+&lt;/section&gt;
+
+</t>
+<t tx=".20191205223224.2">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+&lt;!-- 請注意, @others 不可以內縮 --&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+
+						
+</t>
+<t tx=".20191205223224.3">## CHAPTER 3  二維草圖
+## TWO DIMENSIONAL SKETCHING
+
+### 二維草圖在NX12中用於創建實體特徵
+
+1.繪製幾何體--利用直線圓弧多邊形等構成草圖形狀
+
+2.定義幾何關係--給予水平垂直或者角度等相關約束條件限制圖形位置及大小
+
+
+ [對應網站](https://s40723147.github.io/cad2019ag4/content/NX12.html)
+</t>
+<t tx=".20191205223224.4">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+&lt;!-- 請注意, @others 不可以內縮 --&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+
+						
+</t>
+<t tx=".20191205223224.5">### Example   3.6.1  Circular Base
+&lt;iframe src="https://player.vimeo.com/video/377343284" width="640" height="564" frameborder="0" allow="autoplay; fullscreen" allowfullscreen&gt;&lt;/iframe&gt;</t>
 <t tx="leo.20180902120523.1"></t>
 <t tx="leo.20180902120523.10">## cad2019ag4 NX12 章節重點
 
@@ -329,46 +400,5 @@ QLineEdit#editorLabel {
 }</t>
 <t tx="leo.20180902120538.3">horizontal: body pane to the left
 vertical: body pane on the botton</t>
-<t tx="leo.20191205214713.1">&lt;section data-markdown&gt;
-    &lt;script type="text/template"&gt;
-@others
-    &lt;/script&gt;
-&lt;/section&gt;
-
-
-						
-</t>
-<t tx="leo.20191205214713.2">## CHAPTER 3  二維草圖
-## TWO DIMENSIONAL SKETCHING
-
-### 二維草圖在NX12中用於創建實體特徵
-
-1.繪製幾何體--利用直線圓弧多邊形等構成草圖形狀
-
- 2.定義幾何關係--給予水平垂直或者角度等相關約束條件限制圖形位置及大小
-
-
- [對應網站](https://s40723147.github.io/cad2019ag4/content/NX12.html)
-
-
-
-
-
-</t>
-<t tx="leo.20191205215528.1">&lt;section data-markdown&gt;
-    &lt;script type="text/template"&gt;
-@others
-    &lt;/script&gt;
-&lt;/section&gt;
-
-
-						
-</t>
-<t tx="leo.20191205215528.2">### Example   3.6.1  Circular Base
-&lt;iframe src="https://player.vimeo.com/video/377343284" width="640" height="564" frameborder="0" allow="autoplay; fullscreen" allowfullscreen&gt;&lt;/iframe&gt;
-
-
-
-</t>
 </tnodes>
 </leo_file>
