@@ -32,6 +32,14 @@
 <v t=".20191205223224.5"><vh>影片</vh></v>
 </v>
 </v>
+<v t="leo.20191205232925.1"><vh>Ch4</vh>
+<v t="leo.20191205232925.2"><vh>Ch4內容</vh>
+<v t="leo.20191205232925.3"><vh>內容</vh></v>
+</v>
+<v t="leo.20191205233453.1"><vh>Ch4延伸</vh>
+<v t="leo.20191205233453.2"><vh>內容</vh></v>
+</v>
+</v>
 <v t="leo.20180902120523.11"><vh>快捷鍵</vh>
 <v t="leo.20180902120523.12"><vh>投影片快捷鍵</vh></v>
 </v>
@@ -400,5 +408,55 @@ QLineEdit#editorLabel {
 }</t>
 <t tx="leo.20180902120538.3">horizontal: body pane to the left
 vertical: body pane on the botton</t>
+<t tx="leo.20191205232925.1">&lt;section&gt;
+@others
+&lt;/section&gt;
+
+</t>
+<t tx="leo.20191205232925.2">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+&lt;!-- 請注意, @others 不可以內縮 --&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+
+						
+</t>
+<t tx="leo.20191205232925.3">## CHAPTER 4  三維建模
+## THREE DIMENSIONAL MODELING
+
+### NX12中包刮的建模方式分為以下兩類
+
+#### 1.Swept Features        長出功能
+
+#### 2.Remove Features     刪除功能包括 
+
+
+ [對應網站](https://s40723147.github.io/cad2019ag4/content/NX12.html)
+</t>
+<t tx="leo.20191205233453.1">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+&lt;!-- 請注意, @others 不可以內縮 --&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+
+						
+</t>
+<t tx="leo.20191205233453.2">### Swept Features include:
+* Extruded Body                 擠出實體
+* Revolved Body                 迴轉實體
+* Sweep along Guide           掃掠
+* Tube                                    管
+* Styled Sweep                     樣式掃描
+### Remove Features include:
+* Hole                                        孔
+* Pocket                                   口袋
+* Slot                                          插槽
+* Groove                                  凹槽</t>
 </tnodes>
 </leo_file>
