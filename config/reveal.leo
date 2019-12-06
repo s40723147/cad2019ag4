@@ -1,11 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Created by Leo: http://leoeditor.com/leo_toc.html -->
 <leo_file xmlns:leo="http://leoeditor.com/namespaces/leo-python-editor/1.1" >
-<leo_header file_format="2" tnodes="0" max_tnode_index="0" clone_windows="0"/>
-<globals body_outline_ratio="0.5" body_secondary_ratio="0.5">
-	<global_window_position top="50" left="50" height="500" width="700"/>
-	<global_log_window_position top="0" left="0" height="0" width="0"/>
-</globals>
+<leo_header file_format="2"/>
+<globals/>
 <preferences/>
 <find_panel_settings/>
 <vnodes>
@@ -13,28 +10,61 @@
 <v t="leo.20180902120538.2"><vh>@data qt-gui-plugin-style-sheet</vh></v>
 <v t="leo.20180902120538.3"><vh>@string initial_split_orientation = horizontal</vh></v>
 </v>
-<v t="leo.20180902120523.1" a="E"><vh>編輯 reveal</vh>
-<v t="leo.20180902120523.2" a="E"><vh>@path ./../reveal</vh>
-<v t="leo.20180902120523.3" a="E"><vh>@clean index.html</vh>
-<v t="leo.20180902120523.4" a="E"><vh>html</vh>
+<v t="leo.20180902120523.1"><vh>編輯 reveal</vh>
+<v t="leo.20180902120523.2"><vh>@path ./../reveal</vh>
+<v t="leo.20180902120523.3"><vh>@clean index.html</vh>
+<v t="leo.20180902120523.4"><vh>html</vh>
 <v t="leo.20180902120523.5"><vh>head</vh></v>
-<v t="leo.20180902120523.6" a="E"><vh>body</vh>
-<v t="leo.20180902120523.7" a="E"><vh>reveal div</vh>
-<v t="leo.20180902120523.8" a="E"><vh>slides div</vh>
-<v t="leo.20180902120523.9" a="E"><vh>封面投影片</vh>
+<v t="leo.20180902120523.6"><vh>body</vh>
+<v t="leo.20180902120523.7"><vh>reveal div</vh>
+<v t="leo.20180902120523.8"><vh>slides div</vh>
+<v t="leo.20180902120523.9"><vh>投影片封面</vh>
 <v t="leo.20180902120523.10"><vh>封面投影片內容</vh></v>
 </v>
-<v t="leo.20180902120523.11" a="E"><vh>快捷鍵</vh>
+<v t=".20191205222631.1"><vh>Ch1</vh>
+<v t=".20191205222631.2"><vh>Ch1</vh></v>
+</v>
+<v t=".20191205223224.1"><vh>Ch2</vh>
+<v t=".20191205223224.2"><vh>Ch2內容1</vh>
+<v t=".20191205223224.3"><vh>內容</vh></v>
+</v>
+<v t=".20191205223224.4"><vh>Ch2內容2</vh>
+<v t=".20191205223224.5"><vh>內容</vh></v>
+</v>
+<v t=".20191206025510.1"><vh>Ch2內容3</vh>
+<v t=".20191206025510.2"><vh>內容</vh></v>
+</v>
+</v>
+<v t=".20191206023514.1"><vh>Ch3</vh>
+<v t=".20191206023514.2"><vh>Ch3內容</vh>
+<v t=".20191206023514.3"><vh>內容</vh></v>
+</v>
+<v t=".20191206023514.4"><vh>Ch3影片</vh>
+<v t=".20191206023514.5"><vh>影片</vh></v>
+</v>
+</v>
+<v t="leo.20191205232925.1"><vh>Ch4</vh>
+<v t="leo.20191205232925.2"><vh>Ch4內容</vh>
+<v t="leo.20191205232925.3"><vh>內容</vh></v>
+</v>
+<v t="leo.20191205233453.1"><vh>Ch4延伸1</vh>
+<v t="leo.20191205233453.2"><vh>內容</vh></v>
+</v>
+<v t=".20191206023422.1"><vh>Ch4延伸2</vh>
+<v t=".20191206023422.2"><vh>內容</vh></v>
+</v>
+</v>
+<v t="leo.20180902120523.11"><vh>快捷鍵</vh>
 <v t="leo.20180902120523.12"><vh>投影片快捷鍵</vh></v>
 </v>
 <v t="leo.20180902120523.13"><vh>各式內容引用範例</vh>
-<v t="leo.20180902120523.14" a="E"><vh>導入數學符號與方程式</vh>
+<v t="leo.20180902120523.14"><vh>導入數學符號與方程式</vh>
 <v t="leo.20180902120523.15"><vh>LaTeX 格式方程式</vh></v>
 </v>
-<v t="leo.20180902120523.16" a="E"><vh>導入縮排程式碼</vh>
+<v t="leo.20180902120523.16"><vh>導入縮排程式碼</vh>
 <v t="leo.20180902120523.17"><vh>引用程式碼</vh></v>
 </v>
-<v t="leo.20180902120523.18" a="E"><vh>導入影片</vh>
+<v t="leo.20180902120523.18"><vh>導入影片</vh>
 <v t="leo.20180902120523.19"><vh>iframe 導入影片</vh></v>
 </v>
 </v>
@@ -47,16 +77,169 @@
 </v>
 </vnodes>
 <tnodes>
-<t tx="leo.20180902120523.1"></t>
-<t tx="leo.20180902120523.10">## CMSimfly 網際內容管理
+<t tx=".20191205222631.1">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;
 
-### KMOLab
+
+						
+</t>
+<t tx=".20191205222631.2">## CHAPTER 1  簡介
+## INTRODUCTION
+
+* CAD / CAM 開發的簡歷史
+
+* CAD / CAM / CAE 的定義
+
+* 各章節教程摘要
+
+ [對應網站](https://s40723147.github.io/cad2019ag4/content/NX12.html)
+
+
+
+
+
+</t>
+<t tx=".20191205223224.1">&lt;section&gt;
+@others
+&lt;/section&gt;
+
+</t>
+<t tx=".20191205223224.2">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+&lt;!-- 請注意, @others 不可以內縮 --&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+
+						
+</t>
+<t tx=".20191205223224.3">## CHAPTER 2  入門
+## GETTING STARTED
+
+*  啟動NX12並打開文件、列印、儲存和關閉文件
+
+* NX12介面
+
+* 圖層
+
+* 座標系統
+
+* 工具列
+
+ [對應網站](https://s40723147.github.io/cad2019ag4/content/NX12.html)
+</t>
+<t tx=".20191205223224.4">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+&lt;!-- 請注意, @others 不可以內縮 --&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+
+						
+</t>
+<t tx=".20191205223224.5">## 圖層
+
+* 工作
+
+* 可選
+
+* 僅可見
+
+* 不可見
+
+ [對應網站](https://s40723147.github.io/cad2019ag4/content/NX12.html)</t>
+<t tx=".20191206023422.1">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+&lt;!-- 請注意, @others 不可以內縮 --&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+
+						
+</t>
+<t tx=".20191206023422.2">### Remove Features include:
+* Hole                                        孔
+* Pocket                                   口袋
+* Slot                                          插槽
+* Groove                                  凹槽</t>
+<t tx=".20191206023514.1">&lt;section&gt;
+@others
+&lt;/section&gt;
+
+</t>
+<t tx=".20191206023514.2">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+&lt;!-- 請注意, @others 不可以內縮 --&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+
+						
+</t>
+<t tx=".20191206023514.3">## CHAPTER 3  二維草圖
+## TWO DIMENSIONAL SKETCHING
+
+### 二維草圖在NX12中用於創建實體特徵
+
+1.繪製幾何體--利用直線圓弧多邊形等構成草圖形狀
+
+2.定義幾何關係--給予水平垂直或者角度等相關約束條件限制圖形位置及大小
+
+
+ [對應網站](https://s40723147.github.io/cad2019ag4/content/NX12.html)
+</t>
+<t tx=".20191206023514.4">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+&lt;!-- 請注意, @others 不可以內縮 --&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+
+						
+</t>
+<t tx=".20191206023514.5">### Example   3.6.1  Circular Base
+&lt;iframe src="https://player.vimeo.com/video/377343284" width="640" height="564" frameborder="0" allow="autoplay; fullscreen" allowfullscreen&gt;&lt;/iframe&gt;</t>
+<t tx=".20191206025510.1">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+&lt;!-- 請注意, @others 不可以內縮 --&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+
+						
+</t>
+<t tx=".20191206025510.2">## 座標系統
+
+* 絕對坐標系（CSYS）
+
+* 工作坐標系（WCS）
+
+ [對應網站](https://s40723147.github.io/cad2019ag4/content/NX12.html)</t>
+<t tx="leo.20180902120523.1"></t>
+<t tx="leo.20180902120523.10">## cad2019ag4 NX12 章節重點
+
+### ag4
 
 &lt;small&gt;
-Created by [KMOLab](http://lab.kmol.info/)
+Created by [ag4](https://github.com/s40723147/cad2019ag4)
 &lt;/small&gt;
 
-[CMSimfly 網誌](./../blog/index.html)
+
 
 
 </t>
@@ -326,5 +509,51 @@ QLineEdit#editorLabel {
 }</t>
 <t tx="leo.20180902120538.3">horizontal: body pane to the left
 vertical: body pane on the botton</t>
+<t tx="leo.20191205232925.1">&lt;section&gt;
+@others
+&lt;/section&gt;
+
+</t>
+<t tx="leo.20191205232925.2">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+&lt;!-- 請注意, @others 不可以內縮 --&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+
+						
+</t>
+<t tx="leo.20191205232925.3">## CHAPTER 4  三維建模
+## THREE DIMENSIONAL MODELING
+
+### NX12中包刮的建模方式分為以下兩類
+
+#### 1.Swept Features        長出功能
+
+#### 2.Remove Features     刪除功能包括 
+
+
+ [對應網站](https://s40723147.github.io/cad2019ag4/content/NX12.html)
+</t>
+<t tx="leo.20191205233453.1">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+&lt;!-- 請注意, @others 不可以內縮 --&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+
+						
+</t>
+<t tx="leo.20191205233453.2">### Swept Features include:
+* Extruded Body                 擠出實體
+* Revolved Body                 迴轉實體
+* Sweep along Guide           掃掠
+* Tube                                    管
+* Styled Sweep                     樣式掃描
+</t>
 </tnodes>
 </leo_file>
