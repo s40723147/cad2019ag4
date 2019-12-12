@@ -54,6 +54,14 @@
 <v t=".20191206023422.2"><vh>內容</vh></v>
 </v>
 </v>
+<v t="leo.20191211235300.1"><vh>Ch5</vh>
+<v t="leo.20191211235300.2"><vh>Ch5內容</vh>
+<v t="leo.20191211235300.3"><vh>內容</vh></v>
+</v>
+<v t="leo.20191211235300.4"><vh>Ch5延伸1</vh>
+<v t="leo.20191211235300.5"><vh>內容</vh></v>
+</v>
+</v>
 <v t="leo.20180902120523.11"><vh>快捷鍵</vh>
 <v t="leo.20180902120523.12"><vh>投影片快捷鍵</vh></v>
 </v>
@@ -554,6 +562,49 @@ vertical: body pane on the botton</t>
 * Sweep along Guide           掃掠
 * Tube                                    管
 * Styled Sweep                     樣式掃描
+</t>
+<t tx="leo.20191211235300.1">&lt;section&gt;
+@others
+&lt;/section&gt;
+
+</t>
+<t tx="leo.20191211235300.2">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+&lt;!-- 請注意, @others 不可以內縮 --&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+
+						
+</t>
+<t tx="leo.20191211235300.3">## CHAPTER 5 DRAFTING 製圖
+
+### 描述物件的功能或結構的技術，是在世界範圍通用的「工程技術的語言」‧
+
+#### 1.圖紙大小選用
+#### 2.單位選用
+#### 3.角法選用
+
+
+ [對應網站](https://s40723147.github.io/cad2019ag4/content/NX12.html)
+</t>
+<t tx="leo.20191211235300.4">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+&lt;!-- 請注意, @others 不可以內縮 --&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+
+						
+</t>
+<t tx="leo.20191211235300.5">### 各項選用
+* 圖紙要求可以裝訂，折疊或捲起。
+* 單位選用分為英制與公制。
+* 常用的角法為第一角法和第一角法。
 </t>
 </tnodes>
 </leo_file>
