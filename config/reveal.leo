@@ -87,6 +87,17 @@
 <v t=".20191212223329.7"><vh>內容</vh></v>
 </v>
 </v>
+<v t=".20191212233815.1"><vh>Ch8</vh>
+<v t=".20191212233815.2"><vh>Ch8內容</vh>
+<v t=".20191212233815.3"><vh>內容</vh></v>
+</v>
+<v t=".20191212233815.4"><vh>Ch8延伸1</vh>
+<v t=".20191212233815.5"><vh>內容</vh></v>
+</v>
+<v t=".20191212233815.6"><vh>Ch8延伸2</vh>
+<v t=".20191212233815.7"><vh>內容</vh></v>
+</v>
+</v>
 <v t="leo.20180902120523.11"><vh>快捷鍵</vh>
 <v t="leo.20180902120523.12"><vh>投影片快捷鍵</vh></v>
 </v>
@@ -403,6 +414,66 @@
 * 複曲面(多平行線)
 * 網格複曲面(多平行線存於兩平行線)
 * 掃出曲面(目錄&gt;插入&gt;掃出)</t>
+<t tx=".20191212233815.1">&lt;section&gt;
+@others
+&lt;/section&gt;
+
+</t>
+<t tx=".20191212233815.2">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+&lt;!-- 請注意, @others 不可以內縮 --&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+
+						
+</t>
+<t tx=".20191212233815.3">## CHAPTER 8 有限元分析 
+## FINITE ELEMENT ANALYSIS
+
+#### 1.元素形狀和節點
+#### 2.模擬創建
+#### 3.網格化/負載/邊界條件
+#### 4.結果與模擬
+
+ [對應網站](https://s40723147.github.io/cad2019ag4/content/NX12.html)</t>
+<t tx=".20191212233815.4">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+&lt;!-- 請注意, @others 不可以內縮 --&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+
+						
+</t>
+<t tx=".20191212233815.5">### 元素形狀和節點
+
+* 一維元素
+* 二維元素(三角形/四邊形)
+* 三維元素(四面體/六面體)</t>
+<t tx=".20191212233815.6">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+&lt;!-- 請注意, @others 不可以內縮 --&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+
+						
+</t>
+<t tx=".20191212233815.7">### 網格化
+* 模型離散為小模型元素
+
+### 負載
+* 模型上施加載荷應輸入到系統中
+
+### 結果與模擬
+* 進行求解和分析</t>
 <t tx="leo.20180902120523.1"></t>
 <t tx="leo.20180902120523.10">## cad2019ag4 NX12 章節重點
 
@@ -769,7 +840,7 @@ vertical: body pane on the botton</t>
 <t tx="leo.20191211235300.5">### 各項選用
 * 圖紙要求可以裝訂，折疊或捲起。
 * 單位選用分為英制與公制。
-* 常用的角法為第一角法和第一角法。
+* 常用的角法為第一角法和第三角法。
 </t>
 </tnodes>
 </leo_file>
