@@ -1,0 +1,328 @@
+<!DOCTYPE html><html>
+        <head>
+        <title>CMSiMDE</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700,900" rel="stylesheet">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/fonts/icomoon/style.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/bootstrap.min.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/magnific-popup.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/jquery-ui.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/owl.carousel.min.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/owl.theme.default.min.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/bootstrap-datepicker.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/fonts/flaticon/font/flaticon.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/aos.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/style.css">
+        <link rel="shortcut icon" href="./../cmsimde/static/favicons.png">
+        
+        <style type='text/css'>
+            .site-section {
+            background-color: #FFFF;
+            padding: 40px 40px;
+            }
+            body > div > div.dropdown.open {
+                display: block;
+            }
+        </style>
+    
+        <!-- <script src="./../cmsimde/static/jquery.js"></script> -->
+        <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+        <script src="../cmsimde/static/chimper/js/jquery-3.3.1.min.js"></script>
+        <link rel="stylesheet" href="./../cmsimde/static/tipuesearch/css/normalize.min.css">
+        <script src="./../cmsimde/static/tipuesearch/tipuesearch_set.js"></script>
+        <script src="tipuesearch_content.js"></script>
+        <link rel="stylesheet" href="./../cmsimde/static/tipuesearch/css/tipuesearch.css">
+        <script src="./../cmsimde/static/tipuesearch/tipuesearch.js"></script>
+        <script>
+            /* original tipuesearch
+            $(document).ready(function() {
+                 $('#tipue_search_input').tipuesearch();
+            });
+            */
+            // customed doSearch
+            function doSearch() {
+                $('#tipue_search_input').tipuesearch({
+                    newWindow: true, 
+                    minimumLength: 2,
+                    wholeWords: false, // for search 中文
+                });
+            }
+            $(document).ready(doSearch);
+        </script>
+        
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shCore.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushJScript.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushJava.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushPython.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushSql.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushHaxe.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushXml.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushPhp.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushLua.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushCpp.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushCss.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushCSharp.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushDart.js"></script>
+<link type="text/css" rel="stylesheet" href="./../cmsimde/static/syntaxhighlighter/css/shCoreDefault.css"/>
+<script type="text/javascript">SyntaxHighlighter.all();</script>
+
+<!-- 啟用 LaTeX equations 編輯 -->
+<script src="https://scrum-3.github.io/web/math/MathJax.js?config=TeX-MML-AM_CHTML" type="text/javascript"></script>
+<script type="text/javascript">
+init_mathjax = function() {
+    if (window.MathJax) {
+        // MathJax loaded
+        MathJax.Hub.Config({
+            tex2jax: {
+                inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+                displayMath: [ ['$$','$$'], ["\\[","\\]"] ]
+            },
+            displayAlign: 'left', // Change this to 'center' to center equations.
+            "HTML-CSS": {
+                styles: {'.MathJax_Display': {"margin": 0}}
+            }
+        });
+        MathJax.Hub.Queue(["Typeset",MathJax.Hub]);
+    }
+}
+init_mathjax();
+</script>
+
+<!-- 暫時不用
+<script src="./../cmsimde/static/fengari-web.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/Cango-13v08-min.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/CangoAxes-4v01-min.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/gearUtils-05.js"></script>
+-->
+<!-- for Brython 暫時不用
+<script src="https://scrum-3.github.io/web/brython/brython.js"></script>
+<script src="https://scrum-3.github.io/web/brython/brython_stdlib.js"></script>
+-->
+<style>
+img.add_border {
+    border: 3px solid blue;
+}
+</style>
+
+</head>
+<body>
+<div class='container'><nav>
+        
+    <div class="site-wrap">
+
+    <div class="site-mobile-menu">
+      <div class="site-mobile-menu-header">
+        <div class="site-mobile-menu-close mt-3">
+          <span class="icon-close2 js-menu-toggle"></span>
+        </div>
+      </div>
+      <div class="site-mobile-menu-body"></div>
+    </div>
+    
+            <header class="site-navbar py-4 bg-white" role="banner">
+              <div class="container-fluid">
+                <div class="row align-items-center">
+                <h1>cad2019ag4 </h1>
+                <div class="pl-4">
+                    <form>
+                    <input type="text" placeholder="Search" name="q" id="tipue_search_input" pattern=".{2,}" title="At least 2 characters" required>
+                    </form>
+                </div>
+                  <!-- <div class="col-11 col-xl-2">
+                    <h1 class="mb-0 site-logo"><a href="index.html" class="text-black h2 mb-0">cad2019ag4 </a></h1> 
+                  </div>
+                  -->
+                  <div class="col-12 col-md-10 d-none d-xl-block">
+                    <nav class="site-navigation position-relative text-right" role="navigation">
+    <ul class='site-menu js-clone-nav mr-auto d-none d-lg-block'>
+                        <li class="active has-children"><a href="index.html">Home</a>
+                        <ul class="dropdown">
+                            <li><a href="sitemap.html">Site Map</a></li>
+                            <li><a href="./../reveal/index.html">reveal</a></li>
+                            <li><a href="./../blog/index.html">blog</a></li>
+                        </ul>
+                      </li>
+                     <li><a href='member.html'>member</a><li class='has-children'><a href='Solvespace.html'>Solvespace</a><ul class='dropdown'><li><a href='Solvespace操作.html'>Solvespace操作</a></li></ul><li class='has-children'><a href='NX12.html'>NX12</a><ul class='dropdown'><li><a href='NX 零組件繪圖.html'>NX 零組件繪圖</a></li></ul><li class='has-children'><a href='NX12 tutorial.html'>NX12 tutorial</a><ul class='dropdown'><li><a href='CHAPTER 1 – INTRODUCTION.html'>CHAPTER 1 – INTRODUCTION</a><li><a href='CHAPTER 2 – GETTING STARTED.html'>CHAPTER 2 – GETTING STARTED</a><li><a href='CHAPTER 3 – TWO DIMENSIONAL SKETCHING-1.html'>CHAPTER 3 – TWO DIMENSIONAL SKETCHING-1</a><li><a href='CHAPTER 3 – TWO DIMENSIONAL SKETCHING-2.html'>CHAPTER 3 – TWO DIMENSIONAL SKETCHING-2</a><li><a href='CHAPTER 4 – THREE DIMENSIONAL MODELING.html'>CHAPTER 4 – THREE DIMENSIONAL MODELING</a><li><a href='CHAPTER 5 – DRAFTING.html'>CHAPTER 5 – DRAFTING</a><li><a href='CHAPTER 6 - ASSEMBLY MODELING.html'>CHAPTER 6 - ASSEMBLY MODELING</a><li><a href='CHAPTER 7 – FREEFORM SURFACE MODELING.html'>CHAPTER 7 – FREEFORM SURFACE MODELING</a><li><a href='CHAPTER 8 – FINITE ELEMENT ANALYSIS.html'>CHAPTER 8 – FINITE ELEMENT ANALYSIS</a><li><a href='CHAPTER 9 – MANUFACTURING.html'>CHAPTER 9 – MANUFACTURING</a></li>
+                      </ul>
+                </nav>
+              </div>
+              <div class="d-inline-block d-xl-none ml-md-0 mr-auto py-3" style="position: relative; top: 3px;"><a href="#" class="site-menu-toggle js-menu-toggle text-black"><span class="icon-menu h3"></span></a></div>
+              </div>
+
+            </div>
+          </div>
+          
+        </header>
+    <div id="tipue_search_content">CHAPTER 8 – FINITE ELEMENT ANALYSIS << <a href='CHAPTER 8 – FINITE ELEMENT ANALYSIS.html'>Previous</a> <br /><h1>CHAPTER 9 – MANUFACTURING</h1>
+<p>本章重點在於如何使用<span>NX</span>進行<span>CAM</span>操作</p>
+<p>教導如何透過<span>CAD / CAM</span>集成，生成用於數控機床銑削零件所需的控制代碼</p>
+<p>介紹如何使用<span>NX12</span>生成<span>3</span>軸加工機的<span>CNC</span>代碼</p>
+<p><span> </span></p>
+<p><span>9.1-</span>入門</p>
+<p>設定<span>CAM</span>環境</p>
+<p>步驟：資源欄<span>&gt;</span>角色<span>&gt;</span>內容<span>&gt;</span>進階角色</p>
+<p><span> </span></p>
+<p><span>9.1.1</span>創建專案</p>
+<p>創建或導入模型並創建胚料</p>
+<p>步驟：導入<span>or</span>創建模型<span>&gt;</span>創建胚料<span>&gt;</span>輸入尺寸<span>(</span>需可包裹模型<span>)&gt;</span>選擇方塊原點</p>
+<p>編輯胚料基礎設定<span>(</span>視覺效果<span>)</span></p>
+<p>步驟：點擊可視化<span>&gt;</span>點擊胚料<span>&gt;</span>更改透明度<span>&gt;</span>右鍵隱藏方塊</p>
+<p><span> </span></p>
+<p><span>9.1.2</span>設置加工環境</p>
+<p>進入製造模組</p>
+<p>步驟：選擇文件<span>&gt;</span>新建<span>&gt;</span>製造<span>&gt;</span>銑削</p>
+<p>設定銑削環境</p>
+<p><span> </span></p>
+<p><span>9.1.3</span>操作導航器</p>
+<p>講解操作導航器的位置及使用方法</p>
+<p>步驟：資源欄<span>&gt;</span>操作導航器<span>&gt;</span>分類<span>(</span>程序順序、機床、幾何、加工方法<span>)</span></p>
+<p><span> </span></p>
+<p><span>9.1.3</span>機器坐標系<span>(MCS)</span></p>
+<p>講解如何創建幾何體及座標<span>(MCS)</span></p>
+<p>及如何定義幾何體與定義的用處</p>
+<p>步驟：創建幾何體<span>&gt;</span>點選幾何體<span>&gt;</span>設置<span>MCS&gt;</span>點選<span>OK</span></p>
+<p><span> </span></p>
+<p><span>9.2</span>創建工序</p>
+<p><span>9.2.1</span>創建新工序</p>
+<p>講解<span>3</span>軸加工機的各切削子工序用途及使用環境</p>
+<p>教導創建工序之步驟</p>
+<p>步驟：創建工序<span>&gt;</span>選擇<span>Mill_Contour&gt;</span>選擇子工序<span>&gt;</span>設置名稱<span>&gt;</span>更改幾何體<span>&gt;</span>點選<span>OK</span></p>
+<p><span> </span></p>
+<p><span>9.2.2</span>刀具選擇與創建</p>
+<p>常用刀具類型介紹</p>
+<p>講解如何創建即設定刀具</p>
+<p>步驟：新建刀具<span>&gt;</span>依照需求創建刀具<span>&gt;</span>設定刀具數值<span>&gt;</span>點擊<span>OK</span></p>
+<p><span> </span></p>
+<p><span>9.2.3</span>刀具路徑設置</p>
+<p>介紹各種切削路徑及使用時機</p>
+<p>講解如何創立刀具</p>
+<p>步驟：切削模式<span>&gt;</span>選擇適當模式</p>
+<p><span> </span></p>
+<p><span>9.2.4</span>跨距及殘留高度</p>
+<p>介紹跨距的定義及如何設定跨距的數值</p>
+<p>介紹殘留高度及講解如何定義殘留高度的值</p>
+<p>步驟：步距<span>&gt;</span>輸入數值<span>&gt;</span>設定殘留高度百分比</p>
+<p><span> </span></p>
+<p><span>9.2.5</span>每刀切削深</p>
+<p>講解及介紹切削深，並教導如何定義</p>
+<p>步驟：切削深度<span>&gt;</span>設定數值</p>
+<p><span> </span></p>
+<p><span>9.2.6</span>切削參數</p>
+<p>設定切割優先度使軟體將切削最佳化</p>
+<p>介紹切削參數各選項的用途</p>
+<p>步驟：切削參數<span>&gt;</span>設定優先度<span>&gt;</span>更改其餘選項<span>&gt;</span>點擊<span>OK</span></p>
+<p><span> </span></p>
+<p><span>9.2.7</span>非切削移動</p>
+<p>設定及講解功能，設定換刀點</p>
+<p>步驟：非切削移動<span>&gt;</span>從起點<span>(</span>設定換刀點<span>)&gt;</span>輸入數值<span>&gt;</span>點擊<span>OK</span></p>
+<p><span> </span></p>
+<p><span>9.2.8</span>速度與進給</p>
+<p>講解進給與速度的關係，並教導如何設定</p>
+<p>步驟：進給率與速度<span>&gt;</span>設定進給<span>&gt;</span>設定主軸速度<span>&gt;</span>點選計算機按鈕<span>&gt;</span>點擊<span>OK</span></p>
+<p><span> </span></p>
+<p><span>9.3</span>程序生成和驗證</p>
+<p><span>9.3.1</span>生成程序</p>
+<p>教導操作步驟及講解生成出的各個顏色標記的涵義</p>
+<p>步驟：點選生成圖標<span>&gt;</span>觀察顏色</p>
+<p><span> </span></p>
+<p><span>9.3.2</span>刀具路徑顯示</p>
+<p>講解如何觀看刀具路徑</p>
+<p>步驟：操作<span>&gt;</span>點擊該程序</p>
+<p><span> </span></p>
+<p><span>9.3.3</span>刀具路徑模擬</p>
+<p>檢查程序避免錯誤造成機台損壞</p>
+<p>步驟：操作導航器<span>&gt;</span>該程序<span>&gt;</span>工具路徑<span>&gt;</span>驗證<span>&gt;</span>點擊播放圖標<span>&gt;</span>更改動作數及精細度<span>&gt;</span>觀察模擬</p>
+<p><span> </span></p>
+<p><span>9.3.4</span>銑削檢查</p>
+<p>檢查刀具是否確實切削無剩餘材料</p>
+<p>步驟：程序<span>&gt;</span>工具路徑<span>&gt;</span>銑削檢查<span>&gt;</span>點擊<span>OK&gt;</span>檢查後關閉窗口</p>
+<p><span> </span></p>
+<p><span>9.4</span>操作方法</p>
+<p><span>9.4.1</span>粗加工</p>
+<p>對於銑削操作，在完成作業之前，首先應進行粗銑削。</p>
+<p>粗加工的主要目的是以更快的速度去除物料，不影響完成品準確性並給予下個工序足夠的餘料</p>
+<p><span> </span></p>
+<p><span>9.4.2</span>半精加工</p>
+<p>消除因粗加工引起的不均勻</p>
+<p>教導並設置半精加工工序</p>
+<p><span> </span></p>
+<p><span>9.4.3</span>整理概況</p>
+<p>整理程序應生成零件的表面因此，最好創建多個程序以獨特方式加工具有相關切削參數和策略的表面集</p>
+<p><span> </span></p>
+<p><span>9.4.3.1</span>外部輪廓</p>
+<p>教導如何操作及設置修整壁部分及平面之工序</p>
+<p><span> </span></p>
+<p><span>9.4.3.2</span>內部輪廓</p>
+<p>重複上一步驟工序，但更改修剪區域及範圍</p>
+<p><span> </span></p>
+<p><span>9.4.4</span>修整輪廓表面</p>
+<p>教導如何建立切削曲面之工序，及細部說明</p>
+<p><span> </span></p>
+<p><span>9.4.5</span>地板<span>(</span>最低平面<span>)</span></p>
+<p>講解及教導如何修整平面</p>
+<p><span> </span></p>
+<p><span>9.5</span>後期處理</p>
+<p>製造應用程序的主要用途是生成製造的工具路徑，但是，我們通常不能僅將未修改的刀具路徑文件發送到機器並開始切割，因為有許多不同類型的機器，每種機器都有獨特的硬件功能，要求和控制系統</p>
+<p>修改過程稱為後處理。</p>
+<p>生成最終的後加工刀具路徑涉及兩個步驟</p>
+<p><span>1.</span>創建刀具路徑數據文件，或稱為<span>CLSF</span>（刀具位置源文件）。</p>
+<p><span>2.</span>將<span>CLSF</span>後處理為機器<span>CNC</span>代碼（後處理文件）。該程序讀取工具路徑數據並將其重新格式化，以用於特定機器及其隨附工具控制器。</p>
+<p><span> </span></p>
+<p><span>9.5.1</span>創建<span>CLSF</span></p>
+<p>生成並保存操作後，將生成的刀具路徑存儲為操作的一部分</p>
+<p>在零件文件中<span>CLSF</span>（刀具位置源文件）提供了複製這些內部文件的方法</p>
+<p>從零件文件中的操作到<span>CLSF</span>中的工具路徑（即文本文件）的路徑的<span>GOTO</span>值是當前刀具路徑的<span>“</span>快照<span>”</span>導出的值引用自操作中存儲的<span>MCS</span>。</p>
+<p>步驟：點擊輸出<span>CLSF&gt;</span>選擇格式<span>&gt;</span>選擇<span>CLSF_STANDARD&gt;</span>輸入文件的位置<span>&gt;</span>點擊<span>OK</span></p>
+<p><span> </span></p>
+<p><span>9.5.2</span>後處理</p>
+<p>這將為目標工具機創建後處理文件</p>
+<p>可以找到帶有與機器控制器類型有關的<span>G</span>和<span>M</span>代碼。文件的擴展名是<span>.ptp</span>。</p>
+<p>最終輸出（<span>filename.ptp</span>）文件可以傳輸到用於進行實際銑削的機器操作：</p>
+<p>步驟：菜單<span>&gt;</span>工具<span>&gt;</span>操作導航器<span>&gt;</span>輸出<span>&gt;</span>後處理或從主頁選項卡<span>&gt;</span>選擇<span>MILL_3_AXIS</span>機器並輸入文件的位置<span>&gt;</span>點擊<span>OK</span></p>
+=======
+<p>現在，模擬導航器將如下圖所示。<br/><strong>8.3材料性能</strong><br/>下一步是將材料屬性分配給此模擬的實體模型。 因為庫中沒有任何數據可檢索標準材料，我們將創建一個。 讓我們假設我們將使用鋼制造葉輪。<br/>➢單擊上方功能區欄中的分配材料<br/>彈出分配材料窗口。 您可以選擇從庫中選擇預定義的材料，或者創建一種新材料。<br/>➢選擇葉輪以選擇主體<br/>➢單擊創建圖標以創建新材料<br/>輸入名稱和值，如下圖所示。注意單位。<br/>（請註意，30e6代表30×10<sup>6</sup>）<br/>➢選擇確定以退出各向同性材料窗口現在，我們已將材料分配給葉輪模型。<br/><strong>8.4網格化</strong><br/>網格選項將模型離散化為小模型元素。<br/>➢單擊3D四面體圖標<br/>將會彈出一個窗口，詢問類型和元素的大小。<br/>➢首先，在選擇實體的屏幕。然後，有兩種類型的四面體<br/>NX 12中可用的元素。一個是4節點，另一個是10節點。<br/>➢選擇類型為TETRA（10）<br/>➢輸入元素尺寸為1.0英寸<br/>➢點擊確定<br/><strong>8.5負載</strong><br/>實體模型上施加的載荷應輸入到系統中。對於葉輪，假設主力作用在渦輪葉片的凹表面上。該負載可以近似在所有五個表面上施加常壓。由於我們不關心負載，讓我們將值設為100 lbf / in2英寸以誇大葉片的變形<br/><strong>8.6邊界條件</strong><br/>如您在組裝中看到的，葉輪與軸一起圍繞圓錐體的軸線旋轉。前幾章。它不是固定的，但我們關註的是葉片相對於葉輪的核心。圓錐形芯子相對固定，葉片變形是進行相應的分析。<br/><strong>8.7結果與模擬</strong><br/>有限元模型現在可以進行求解和分析了。最好先檢查一下在完成模型求解之前先完成模型。檢查模型<br/>➢單擊菜單→分析→有限元模式檢查→模型設置或單擊功能區欄中“檢查和信息”組中的“模型設置”圖標如右圖所示，這將彈出一個窗口。<br/>➢選擇確定<br/>這將顯示檢查操作的結果。您將在單獨的地方看到任何錯誤和警告窗口。萬一您收到錯誤或警告，請返回完成前面的步驟並完成所需的操作東西。如果您沒有收到錯誤或警告，那麼您就是準備解決FEA問題<br/>8.7.2 FEA結果<br/>➢在Simulation Navigator中，雙擊結果結構<br/>➢您將被定向到後期處理導航器後處理導航器顯示您剛剛解決的所有解決方案。如果您點擊“ +”登錄在解決方案的前面，您將看到對模型執行的不同分析。<br/>➢雙擊位移節點<br/>屏幕現在如下所示。您可以輕鬆地解釋顏色編碼的結果。橘紅色顯示最大變形區域，藍色區域顯示最大變形區域。<br/>最小變形區。您可以觀察到，由於圓錐形核心是固定的，因此會遇到零變形。分析還表明，尖端出現的最大變形刀片的數量約為1.9×10-3英寸。<br/>在後處理導航器上，您可以通過雙擊每個來繼續更改結果選項如下所示。您可以單擊其他無效標記以查看各種結果。一些其他結果如下所示。<br/>8.7.3仿真和動畫<br/>單擊頂部功能區欄中的“結果”選項卡。動畫組可以看作是跟隨<br/>➢單擊動畫圖標。<br/>➢在動畫窗口中，更改<br/>幀數到10，然後單擊“播放”按鈕以查看變形動畫現在，您可以看到有關葉輪運行方式的動畫在將載荷施加到葉片時變形。<br/>➢要在結果顯示中進行任何設置更改，<br/>單擊“編輯帖子視圖”圖標<br/>➢選中顯示未變形模型，然後單擊確定。<br/>現在，按“播放”按鈕以查看動畫。這將顯示變形的動畫原始形狀為灰色，如下圖所示。<br/>➢單擊停止按鈕以停止動畫<br/>➢單擊返回首頁以返回到FEA模型<br/>有兩種方法可以提高FEA結果的準確性：<br/>•減少元素的大小<br/>•增加插值多項式的階數（即，使用二次甚至偶數代替<br/>線性多項式）<br/>讓我們嘗試使用不同的設置來創建仿真。<br/>➢在Simulation Navigator中右鍵單擊解決方案1<br/>➢選擇克隆以復制第一個模擬<br/>➢創建解決方案1的副本後，<br/>將其重命名為解決方案2<br/>➢從Simulation Navigator的下面3D網格，右鍵單擊3D網格（1），然後點擊編輯<br/>➢在彈出對話框中，將類型更改為<br/>TETRA4<br/>➢點擊確定<br/>➢單擊解決圖標以解決<br/>模擬<br/>➢點擊確定<br/>分析作業監視器應顯示狀態解決方案2的完成。<br/>➢點擊取消<br/>➢在Simulation Navigator中，雙擊<br/>解決方案2的結果下圖顯示了分析。您可以觀察最大值的變化。保存所有模擬並關閉文件。</p>
+&gt;&gt;&gt;&gt;&gt;&gt;&gt; 0d11179ca9724580b1eac6e95fb4f46b5b728ea4
+<br />CHAPTER 8 – FINITE ELEMENT ANALYSIS << <a href='CHAPTER 8 – FINITE ELEMENT ANALYSIS.html'>Previous</a> </div>
+        
+    <!-- footer -->
+      <div class="container">
+        <div class="row pt-3 mx-auto">
+            <p>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank" >Colorlib</a>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            </p>
+        </div>
+      </div>
+    <!-- for footer -->
+    
+        </div> <!-- for site wrap -->
+            <!-- <script src="../cmsimde/static/chimper/js/jquery-3.3.1.min.js"></script> -->
+            <script src="../cmsimde/static/chimper/js/jquery-migrate-3.0.1.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery-ui.js"></script>
+            <script src="../cmsimde/static/chimper/js/popper.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/bootstrap.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/owl.carousel.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.stellar.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.countdown.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.magnific-popup.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/bootstrap-datepicker.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/aos.js"></script>
+            <!--
+            <script src="../cmsimde/static/chimper/js/typed.js"></script>
+                    <script>
+                    var typed = new Typed('.typed-words', {
+                    strings: ["Web Apps"," WordPress"," Mobile Apps"],
+                    typeSpeed: 80,
+                    backSpeed: 80,
+                    backDelay: 4000,
+                    startDelay: 1000,
+                    loop: true,
+                    showCursor: true
+                    });
+                    </script>
+            -->
+            <script src="../cmsimde/static/chimper/js/main.js"></script>
+        </body></html>
+        
