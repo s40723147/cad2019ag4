@@ -1,0 +1,244 @@
+<!DOCTYPE html><html>
+        <head>
+        <title>CMSiMDE</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700,900" rel="stylesheet">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/fonts/icomoon/style.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/bootstrap.min.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/magnific-popup.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/jquery-ui.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/owl.carousel.min.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/owl.theme.default.min.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/bootstrap-datepicker.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/fonts/flaticon/font/flaticon.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/aos.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/style.css">
+        <link rel="shortcut icon" href="./../cmsimde/static/favicons.png">
+        
+        <style type='text/css'>
+            .site-section {
+            background-color: #FFFF;
+            padding: 40px 40px;
+            }
+            body > div > div.dropdown.open {
+                display: block;
+            }
+        </style>
+    
+        <!-- <script src="./../cmsimde/static/jquery.js"></script> -->
+        <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+        <script src="../cmsimde/static/chimper/js/jquery-3.3.1.min.js"></script>
+        <link rel="stylesheet" href="./../cmsimde/static/tipuesearch/css/normalize.min.css">
+        <script src="./../cmsimde/static/tipuesearch/tipuesearch_set.js"></script>
+        <script src="tipuesearch_content.js"></script>
+        <link rel="stylesheet" href="./../cmsimde/static/tipuesearch/css/tipuesearch.css">
+        <script src="./../cmsimde/static/tipuesearch/tipuesearch.js"></script>
+        <script>
+            /* original tipuesearch
+            $(document).ready(function() {
+                 $('#tipue_search_input').tipuesearch();
+            });
+            */
+            // customed doSearch
+            function doSearch() {
+                $('#tipue_search_input').tipuesearch({
+                    newWindow: true, 
+                    minimumLength: 2,
+                    wholeWords: false, // for search 中文
+                });
+            }
+            $(document).ready(doSearch);
+        </script>
+        
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shCore.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushJScript.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushJava.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushPython.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushSql.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushHaxe.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushXml.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushPhp.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushLua.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushCpp.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushCss.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushCSharp.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushDart.js"></script>
+<link type="text/css" rel="stylesheet" href="./../cmsimde/static/syntaxhighlighter/css/shCoreDefault.css"/>
+<script type="text/javascript">SyntaxHighlighter.all();</script>
+
+<!-- 啟用 LaTeX equations 編輯 -->
+<script src="https://scrum-3.github.io/web/math/MathJax.js?config=TeX-MML-AM_CHTML" type="text/javascript"></script>
+<script type="text/javascript">
+init_mathjax = function() {
+    if (window.MathJax) {
+        // MathJax loaded
+        MathJax.Hub.Config({
+            tex2jax: {
+                inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+                displayMath: [ ['$$','$$'], ["\\[","\\]"] ]
+            },
+            displayAlign: 'left', // Change this to 'center' to center equations.
+            "HTML-CSS": {
+                styles: {'.MathJax_Display': {"margin": 0}}
+            }
+        });
+        MathJax.Hub.Queue(["Typeset",MathJax.Hub]);
+    }
+}
+init_mathjax();
+</script>
+
+<!-- 暫時不用
+<script src="./../cmsimde/static/fengari-web.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/Cango-13v08-min.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/CangoAxes-4v01-min.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/gearUtils-05.js"></script>
+-->
+<!-- for Brython 暫時不用
+<script src="https://scrum-3.github.io/web/brython/brython.js"></script>
+<script src="https://scrum-3.github.io/web/brython/brython_stdlib.js"></script>
+-->
+<style>
+img.add_border {
+    border: 3px solid blue;
+}
+</style>
+
+</head>
+<body>
+<div class='container'><nav>
+        
+    <div class="site-wrap">
+
+    <div class="site-mobile-menu">
+      <div class="site-mobile-menu-header">
+        <div class="site-mobile-menu-close mt-3">
+          <span class="icon-close2 js-menu-toggle"></span>
+        </div>
+      </div>
+      <div class="site-mobile-menu-body"></div>
+    </div>
+    
+            <header class="site-navbar py-4 bg-white" role="banner">
+              <div class="container-fluid">
+                <div class="row align-items-center">
+                <h1>cad2019ag4 </h1>
+                <div class="pl-4">
+                    <form>
+                    <input type="text" placeholder="Search" name="q" id="tipue_search_input" pattern=".{2,}" title="At least 2 characters" required>
+                    </form>
+                </div>
+                  <!-- <div class="col-11 col-xl-2">
+                    <h1 class="mb-0 site-logo"><a href="index.html" class="text-black h2 mb-0">cad2019ag4 </a></h1> 
+                  </div>
+                  -->
+                  <div class="col-12 col-md-10 d-none d-xl-block">
+                    <nav class="site-navigation position-relative text-right" role="navigation">
+    <ul class='site-menu js-clone-nav mr-auto d-none d-lg-block'>
+                        <li class="active has-children"><a href="index.html">Home</a>
+                        <ul class="dropdown">
+                            <li><a href="sitemap.html">Site Map</a></li>
+                            <li><a href="./../reveal/index.html">reveal</a></li>
+                            <li><a href="./../blog/index.html">blog</a></li>
+                        </ul>
+                      </li>
+                     <li><a href='member.html'>member</a><li class='has-children'><a href='Solvespace.html'>Solvespace</a><ul class='dropdown'><li><a href='Solvespace操作.html'>Solvespace操作</a></li></ul><li class='has-children'><a href='NX12.html'>NX12</a><ul class='dropdown'><li><a href='NX 零組件繪圖.html'>NX 零組件繪圖</a></li></ul><li class='has-children'><a href='NX12 tutorial.html'>NX12 tutorial</a><ul class='dropdown'><li><a href='CHAPTER 1 – INTRODUCTION.html'>CHAPTER 1 – INTRODUCTION</a><li><a href='CHAPTER 2 – GETTING STARTED.html'>CHAPTER 2 – GETTING STARTED</a><li><a href='CHAPTER 3 – TWO DIMENSIONAL SKETCHING.html'>CHAPTER 3 – TWO DIMENSIONAL SKETCHING</a><li><a href='CHAPTER 4 – THREE DIMENSIONAL MODELING.html'>CHAPTER 4 – THREE DIMENSIONAL MODELING</a><li><a href='CHAPTER 5 – DRAFTING.html'>CHAPTER 5 – DRAFTING</a><li><a href='CHAPTER 6 - ASSEMBLY MODELING.html'>CHAPTER 6 - ASSEMBLY MODELING</a><li><a href='CHAPTER 7 – FREEFORM SURFACE MODELING.html'>CHAPTER 7 – FREEFORM SURFACE MODELING</a><li><a href='CHAPTER 8 – FINITE ELEMENT ANALYSIS.html'>CHAPTER 8 – FINITE ELEMENT ANALYSIS</a><li><a href='CHAPTER 9 – MANUFACTURING.html'>CHAPTER 9 – MANUFACTURING</a></li>
+                      </ul>
+                </nav>
+              </div>
+              <div class="d-inline-block d-xl-none ml-md-0 mr-auto py-3" style="position: relative; top: 3px;"><a href="#" class="site-menu-toggle js-menu-toggle text-black"><span class="icon-menu h3"></span></a></div>
+              </div>
+
+            </div>
+          </div>
+          
+        </header>
+    <div id="tipue_search_content">CHAPTER 5 – DRAFTING << <a href='CHAPTER 5 – DRAFTING.html'>Previous</a> <a href='CHAPTER 7 – FREEFORM SURFACE MODELING.html'>Next</a> >> CHAPTER 7 – FREEFORM SURFACE MODELING<br /><h1>CHAPTER 6 - ASSEMBLY MODELING</h1>
+<p><strong><em><span style="text-decoration: underline;">裝配建模 </span>                                                                                   AUTHER:<span style="background-color: #00ffff;">40723149</span></em></strong></p>
+<p><span style="background-color: #ffffff;"><span class="tlid-translation translation" lang="zh-TW"><span class="" title="">每天，我們都會看到許多將零件組裝成一個模型的範例，例如自行車，汽車和電腦。所有這些產品都是通過設計和製造單個零件，然後將它們組裝在一起而創建的。創建它們的設計師必須仔細計劃每個零件，以便它們都能完美地配合在一起以執行所需的功能。</span></span></span></p>
+<p><span style="background-color: #ffffff;"><span class="tlid-translation translation" lang="zh-TW"><span class="" title="">在本章中，您將學習在裝配體建模中使用的兩種方法。 我們將以葉輪組件為例進行組件建模。 該程序集的某些部分已經在較早的章節中進行了建模。</span></span></span></p>
+<p><span style="background-color: #ffffff;"><span class="tlid-translation translation" lang="zh-TW"><span class="" title="">NX 12 Assembly是包含各個零件的零件文件。 它們以這樣的方式添加到零件文件中，即零件實際上位於裝配體中並鏈接到原始零件。 這樣就無需為計算機中的各個部件創建單獨的存儲空間。 所有零件都是可選的，可在設計過程中用於信息和配合，以確保設計者想要的完美配合。 下圖顯示瞭如何添加零部件以構成裝配體。</span></span></span></p>
+<p><span style="background-color: #ffffff;"><span class="tlid-translation translation" lang="zh-TW"><span class="" title=""><img alt="" height="144" src="data:image/png;base64,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" width="332"/></span></span></span></p>
+<p><span style="background-color: #ffffff;"><span class="tlid-translation translation" lang="zh-TW"><span class="" title="">6.1 術語</span></span></span></p>
+<p><strong><span style="background-color: #ffffff;"><span class="tlid-translation translation" lang="zh-TW"><span class="" title="">Assembly 部件</span></span></span></strong></p>
+<p><span style="background-color: #ffffff;"><span class="tlid-translation translation" lang="zh-TW"><span class="" title="">裝配體是指向零件和/或子裝配體的指針的集合。 裝配體是零件文件，其中包含零部件對象。</span></span></span></p>
+<p><strong><span style="background-color: #ffffff;"><span class="tlid-translation translation" lang="zh-TW"><span class="" title="">Component Object 組件對象<br/></span></span></span></strong></p>
+<p><span style="background-color: #ffffff;"><span class="tlid-translation translation" lang="zh-TW"><span class="" title="">零部件對像是指向包含零部件幾何圖形的零件文件的非幾何指針。 零部件對象存儲信息，<strong><em>例如圖層，顏色，參考集，零部件相對於文件系統中零部件的裝配體和路徑的位置數據。</em></strong></span></span></span></p>
+<p><span style="background-color: #ffffff;"><span class="tlid-translation translation" lang="zh-TW"><span class="" title=""><strong>Component Part  組成部分<em><br/></em></strong></span></span></span></p>
+<p><span style="background-color: #ffffff;"><span class="tlid-translation translation" lang="zh-TW"><span class="" title="">一個組合零件是裝配體內的零件對象指向的零件文件。 實際的幾何圖形存儲在零部件中，並且被引用，而不是由裝配體複製。</span></span></span></p>
+<p><strong><span style="background-color: #ffffff;"><span class="tlid-translation translation" lang="zh-TW"><span class="" title="">Component Occurrences 組件發生<br/></span></span></span></strong></p>
+<p><span style="background-color: #ffffff;"><span class="tlid-translation translation" lang="zh-TW"><span class="" title="">零部件的出現是零部件文件中指向幾何的指針。 使用零部件實例來創建一個或多個零部件參考，而無需創建其他幾何體。</span></span></span></p>
+<p><strong><span style="background-color: #ffffff;"><span class="tlid-translation translation" lang="zh-TW"><span class="" title="">Reference Set 參考集</span></span></span></strong></p>
+<p><strong><span style="background-color: #ffffff;"><span class="tlid-translation translation" lang="zh-TW"><span class="" title="">參考集</span></span></span></strong><span style="background-color: #ffffff;"><span class="tlid-translation translation" lang="zh-TW"><span class="" title="">是零部件或子裝配中的對象的命名集合，可用於簡化高層裝配中零部件的表示。</span></span></span></p>
+<p><span style="background-color: #ffffff;"><span class="tlid-translation translation" lang="zh-TW"><span class="" title=""><img alt="" height="172" src="./../images/擷取2.PNG" width="342"/></span></span></span></p>
+<p><span style="background-color: #ffffff;"><span class="tlid-translation translation" lang="zh-TW"><span class="" title="">6.2 組裝方法</span></span></span></p>
+<p><span style="background-color: #ffffff;"><span class="tlid-translation translation" lang="zh-TW"><span class="" title="">創建任何裝配體模型有兩種基本方法。</span></span></span></p>
+<ul>
+<li><span style="background-color: #ffffff;"><span class="tlid-translation translation" lang="zh-TW"><span class="" title="">自上而下的方法</span></span></span></li>
+<li><span style="background-color: #ffffff;"><span class="tlid-translation translation" lang="zh-TW"><span class="" title="">自下而上的方法</span></span></span></li>
+</ul>
+<p><span style="background-color: #ffffff;"><span class="tlid-translation translation" lang="zh-TW"><span class="" title="">         6.2.1 </span></span></span><span class="tlid-translation translation" lang="zh-TW"><span class="" title="">自上而下的方法</span></span><span class="tlid-translation-gender-indicator translation-gender-indicator"></span><span class="tlid-trans-verified-button trans-verified-button" role="button"></span></p>
+<p style="padding-left: 30px;"><span class="tlid-translation translation" lang="zh-TW"><span class="" title="">　　在這種方法中，首先創建裝配零件文件，然後在該文件中創建零部件。然後對各個零件進行建模。 這種類型的建模在新設計中很有用。</span></span></p>
+<p><span class="tlid-translation translation" lang="zh-TW"><span class="" title="">         6.2.2 <span style="background-color: #ffffff;">自下而上的方法</span></span></span></p>
+<p style="padding-left: 30px;"><span class="tlid-translation translation" lang="zh-TW"><span class="" title=""><span style="background-color: #ffffff;">          <span title="">首先以傳統方式創建零部件，然後將其添加到裝配零件中。 </span>當零件文件已經   存在於先前的設計中並且可以重複使用時，此技術特別有用。</span></span></span></p>
+<p style="padding-left: 30px;"><span class="tlid-translation translation" lang="zh-TW"><span class="" title=""><span style="background-color: #ffffff;">6.2.3 混合搭配</span></span></span></p>
+<p style="padding-left: 30px;"><span class="tlid-translation translation" lang="zh-TW"><span class="" title=""><span style="background-color: #ffffff;">您可以在必要時將這兩種方法結合起來，以增加裝配設計需求的靈活性。</span></span></span></p>
+<p style="padding-left: 30px;"><span class="tlid-translation translation" lang="zh-TW"><span class="" title=""><span style="background-color: #ffffff;"><img alt="" height="284" src="./../images/擷取3.PNG" width="219"/> <img alt="" height="282" src="./../images/擷取4.PNG" width="240"/></span></span></span></p>
+<p><span lang="zh-TW"><span title="">6.3 <span class="tlid-translation translation" lang="zh-TW"><span class="" title="">裝配和約束導引</span></span></span></span></p>
+<p><span lang="zh-TW"><span title=""><span class="tlid-translation translation" lang="zh-TW"><span class="" title="">裝配導航器和約束導航器位於屏幕左側資源欄中零件導航器的頂部。 這些導航器向您顯示構成裝配體的各種內容。</span></span></span></span></p>
+<p><span lang="zh-TW"><span title=""><span class="tlid-translation translation" lang="zh-TW"><span class="" title="">6.4 約束條件</span></span></span></span></p>
+<p><span lang="zh-TW"><span title=""><span class="tlid-translation translation" lang="zh-TW"><span class="" title="">通過在裝配的零部件上分配配合條件，可以在這些零部件之間建立位置關係或約束。 這些關係稱為配合約束。 配合條件由一個或多個配合約束組成。</span></span></span></span></p>
+<ol>
+<li><span lang="zh-TW"><span title=""><span class="tlid-translation translation" lang="zh-TW"><span class="" title="">接觸／對齊</span></span></span></span></li>
+<li><span lang="zh-TW"><span title=""><span class="tlid-translation translation" lang="zh-TW"><span class="" title="">同心</span></span></span></span></li>
+<li>距離</li>
+<li>平行</li>
+<li>垂直</li>
+<li>鍵</li>
+<li>中心</li>
+<li>角度</li>
+</ol>
+<br />CHAPTER 5 – DRAFTING << <a href='CHAPTER 5 – DRAFTING.html'>Previous</a> <a href='CHAPTER 7 – FREEFORM SURFACE MODELING.html'>Next</a> >> CHAPTER 7 – FREEFORM SURFACE MODELING</div>
+        
+    <!-- footer -->
+      <div class="container">
+        <div class="row pt-3 mx-auto">
+            <p>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank" >Colorlib</a>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            </p>
+        </div>
+      </div>
+    <!-- for footer -->
+    
+        </div> <!-- for site wrap -->
+            <!-- <script src="../cmsimde/static/chimper/js/jquery-3.3.1.min.js"></script> -->
+            <script src="../cmsimde/static/chimper/js/jquery-migrate-3.0.1.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery-ui.js"></script>
+            <script src="../cmsimde/static/chimper/js/popper.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/bootstrap.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/owl.carousel.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.stellar.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.countdown.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.magnific-popup.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/bootstrap-datepicker.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/aos.js"></script>
+            <!--
+            <script src="../cmsimde/static/chimper/js/typed.js"></script>
+                    <script>
+                    var typed = new Typed('.typed-words', {
+                    strings: ["Web Apps"," WordPress"," Mobile Apps"],
+                    typeSpeed: 80,
+                    backSpeed: 80,
+                    backDelay: 4000,
+                    startDelay: 1000,
+                    loop: true,
+                    showCursor: true
+                    });
+                    </script>
+            -->
+            <script src="../cmsimde/static/chimper/js/main.js"></script>
+        </body></html>
+        
