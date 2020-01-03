@@ -12,6 +12,31 @@
 <p><span style="color: #000000; background-color: #ffffff;">40723154         ☆ <a href="https://github.com/s40723154/cad2019" style="color: #000000; background-color: #ffffff;">倉儲</a>       ☆ <a href="https://s40723154.github.io/cad2019" style="color: #000000; background-color: #ffffff;">網站</a></span></p>
 <h1>W17 協同任務</h1>
 <h4><span style="text-decoration: underline;"><strong>Building a clean model tutorial</strong></span></h4>
+<p>-----------------------------------------------------------------------------------</p>
+<p>建立關節<strong>                                            <span style="background-color: #00ffff;">  Author: 40623123</span></strong></p>
+<p>使用[菜單欄-&gt;添加-&gt;關節-&gt; ...]添加關節</p>
+<p><span><a href="http://www.coppeliarobotics.com/helpFiles/en/positionDialog.htm"><span>位置對話框</span></a></span>和<span><a href="http://www.coppeliarobotics.com/helpFiles/en/orientationDialog.htm"><span>方向對話框</span></a></span>更改它們的位置和方向。我們可以通過<em>Models / tools / Denavit-Hartenberg</em><em>聯合</em><em>creator.ttm</em><em>中</em>的工具模型來構建關節。</p>
+<p>沒有關節位置和方向的信息。然後我們需要從導入的網格打開一個新場景，然後再次導入原始CAD數據</p>
+<p>第一步是細分原始網格。</p>
+<p>我們通過<span><a href="http://www.coppeliarobotics.com/helpFiles/en/triangleEditMode.htm"><span>三角形編輯模式進行</span></a></span>。假設我們可以劃分原始網格。我們可以檢查較小的對象。尋找旋轉形狀，可以用作在其位置以相同方向創建關節的參考。刪除所有不需要的。在多個打開的場景中工作也很有用，以便於可視化/操作。</p>
+<p>在我們的案例中，我們首先關注機器人的基座：它包含一個圓柱體，該圓柱體的第一個關節的位置正確。在三角形編輯模式下，我們有：</p>
+<p>[機器人基礎：法線和三角形編輯模式可視化]</p>
+<p> </p>
+<p> </p>
+<p>通過<span><a href="http://www.coppeliarobotics.com/helpFiles/en/userInterface.htm#toolbars"><span>頁面選擇器</span></a></span> <span><a href="http://www.coppeliarobotics.com/helpFiles/en/userInterface.htm#toolbars"><span>工具欄按鈕</span></a></span>更改相機視圖</p>
+<p><span><a href="http://www.coppeliarobotics.com/helpFiles/en/userInterface.htm#toolbars"><span>擬合到視圖工具欄按鈕</span></a></span>可以派上用場正確幀在版的對象。然後切換到<span><a href="http://www.coppeliarobotics.com/helpFiles/en/vertexEditMode.htm"><span>頂點編輯模式，</span></a></span>並選擇屬於上光盤的所有頂點。通過打開/關閉某些<span><a href="http://www.coppeliarobotics.com/helpFiles/en/layerSelectionDialog.htm"><span>層</span></a></span>，我們可以隱藏場景中的其他對象。然後我們切換回三角形編輯模式：</p>
+<p>[選擇的上光盤，頂點編輯模式（1和2），三角形編輯模式（3）]</p>
+<p>單擊“ <strong>提取圓柱體</strong><strong>”</strong>（這情況下，“ <strong>提取形狀</strong><strong>”</strong>也將起作用）</p>
+<p>據選定的三角形在場景中創建了圓柱體形狀。離開編輯模式放棄更改。通過[菜單欄-&gt;添加-&gt;關節-&gt;旋轉]添加旋轉關節，保持選中狀態，控制選擇提取的圓柱形狀。在<span><a href="http://www.coppeliarobotics.com/helpFiles/en/positionDialog.htm"><span>位置對話框</span></a></span>的“ <strong>位置</strong><strong>”</strong>選項卡上，單擊“ <strong>應用於選擇</strong><strong>”</strong>：這基本上將圓柱體的x / y / z位置複製到關節。兩個位置都相同。在“ <span><a href="http://www.coppeliarobotics.com/helpFiles/en/orientationDialog.htm"><span>方向</span>”<span>對話框</span></a></span>的“ <strong>方向</strong><strong>”</strong>選項卡上，我們還單擊“ <strong>應用於選擇</strong><strong>”</strong></p>
+<p> 需要圍繞其自身的參考框架額外旋轉關節90/180度，以獲得正確的方向或旋轉方向。如果需要，我們可以在該對話框的“ <strong>旋轉</strong><strong>”</strong>選項卡上執行此操作（在這種情況下，請不要忘記單擊“ <strong>自有框架</strong><strong>”</strong>按鈕）。同樣，我們也可以沿關節的軸移動關節，甚至進行更複雜的操作。</p>
+<p>[在正確的位置，以正確的方向接合]</p>
+<p> </p>
+<p>關節複製回到原始場景中，並保存</p>
+<p>所有關節重複上述過程，重命名。</p>
+<p>通過默認，關節將分配給可見性層2，可以在<span><a href="http://www.coppeliarobotics.com/helpFiles/en/commonPropertiesDialog.htm"><span>對象的公共屬性中</span></a></span>進行更改。將所有關節分配給可見性層10，<span><a href="http://www.coppeliarobotics.com/helpFiles/en/layerSelectionDialog.htm"><span>為場景</span></a></span>臨時<span><a href="http://www.coppeliarobotics.com/helpFiles/en/layerSelectionDialog.htm"><span>啟用可見性層</span>10<span>，</span></a></span>以使這些關節也可視化。</p>
+<p>[接頭配置正確]</p>
+<p>開始構建模型層次結構完成模型定義。如果希望<span><a href="http://www.coppeliarobotics.com/helpFiles/en/designingDynamicSimulations.htm"><span>動態啟用</span></a></span> opur機器人</p>
+<p>**************************************************************</p>
 <p>建立可見的模型<strong>                                            <span style="background-color: #00ffff;">  Author: 40723137</span></strong></p>
 <p><br/>點選菜單&gt;添加&gt;基本形狀 在CoppeliaSim建立基本模型<br/>建立時有兩項選擇可選：<br/>純形狀：針對動態進行優化，也可啟用動態應用<br/>基本形狀：為簡單的網格，較無精確度<br/>過於複雜的形狀會使模型計算速度緩慢</p>
 <p>上圖有上萬個三角形架構，有如此多三角形的原因是有些細小特徵所導致的，可透過刪除簡化他們，CoppeliaSim支持OBJ，STL，DXF，3DS（僅Windows）和Collada。還支持URDF</p>
@@ -159,7 +184,7 @@
 <p style="padding-left: 30px;"><span>2.3.1.3 滑鼠右鍵（MB3）</span></p>
 <p style="padding-left: 60px;"><span>MB3 用於訪問用戶界面彈出菜單。 隨後彈出的選項，具體取決於選擇模式和應用。 下圖顯示在草圖中應用。 選擇功能後單擊 MB3 將提供與該功能相關的選項（對象/操作菜單）。單擊 MB3 並按住該按鈕將在功能周圍顯示一組圖標。這些圖標帶有可應用於功能的可能命令。</span></p>
 <p style="padding-left: 30px;"><span>2.3.1.4按鈕組合</span></p>
-<p style="padding-left: 60px;"><span>放大/縮小：<br/>-&gt;同時按住 MB1 和 MB2 並拖動<br/><strong>或</strong><br/>-&gt;按住鍵盤上的 ctrl 按鈕，然後按住並拖動 MB2<br/><strong>或</strong><br/>平移：<br/>-&gt;同時按住 MB2 和 MB3 並拖動<br/><strong>或</strong><br>-&gt;按住鍵盤上的 shift 按鈕並按住 MB2<br/>菜單快捷方式：<br/>-&gt;按住 ctrl + shift 和 MB1、MB2 和 MB3 可以看到功能的快捷方式，直接草圖組和同步建模組</br></span></p>
+<p style="padding-left: 60px;"><span>放大/縮小：<br/>-&gt;同時按住 MB1 和 MB2 並拖動<br/><strong>或</strong><br/>-&gt;按住鍵盤上的 ctrl 按鈕，然後按住並拖動 MB2<br/><strong>或</strong><br/>平移：<br/>-&gt;同時按住 MB2 和 MB3 並拖動<br/><strong>或</strong><br/>-&gt;按住鍵盤上的 shift 按鈕並按住 MB2<br/>菜單快捷方式：<br/>-&gt;按住 ctrl + shift 和 MB1、MB2 和 MB3 可以看到功能的快捷方式，直接草圖組和同步建模組</span></p>
 <p style="padding-left: 30px;">2.3.2 NX12視窗<br/>2.3.3 幾何選擇</p>
 <p style="padding-left: 30px;"><span>可以選擇過濾方法，這有助於在緊密的模型中輕鬆選擇幾何。NX12操作選項取決於所選實體。項目的選擇可以基於實體的程度，例如選擇幾何實體，特徵和零部件。選擇方法可以選擇</span><span>選擇選擇工具欄中的圖標之一。</span></p>
 <p style="padding-left: 30px;"><span>2.3.3.1特徵選擇</span></p>
