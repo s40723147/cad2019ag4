@@ -154,8 +154,97 @@ img.add_border {
           </div>
           
         </header>
-    <div id="tipue_search_content">NX 零組件繪圖 << <a href='NX 零組件繪圖.html'>Previous</a> <a href='CHAPTER 1 – INTRODUCTION.html'>Next</a> >> CHAPTER 1 – INTRODUCTION<br /><h1>NX12 tutorial</h1>
-<br />NX 零組件繪圖 << <a href='NX 零組件繪圖.html'>Previous</a> <a href='CHAPTER 1 – INTRODUCTION.html'>Next</a> >> CHAPTER 1 – INTRODUCTION</div>
+    <div id="tipue_search_content">CHAPTER 8 – FINITE ELEMENT ANALYSIS << <a href='CHAPTER 8 – FINITE ELEMENT ANALYSIS.html'>Previous</a> <br /><h1>CHAPTER 9 – MANUFACTURING</h1>
+<p>本章重點在於如何使用<span>NX</span>進行<span>CAM</span>操作。</p>
+<p>教導如何透過<span>CAD / CAM</span>集成，生成用於數控機床銑削零件所需的控制代碼介紹如何使用<span>NX12</span>生成<span>3</span>軸加工機的<span>CNC</span>代碼。</p>
+<p><span> </span><span>9.1-</span>入門</p>
+<p>設定<span>CAM</span>環境</p>
+<p>步驟：資源欄<span>&gt;</span>角色<span>&gt;</span>內容<span>&gt;</span>進階角色</p>
+<p><span> </span><span>9.1.1</span>創建專案</p>
+<p>創建或導入模型並創建胚料</p>
+<p>步驟：導入<span>or</span>創建模型<span>&gt;</span>創建胚料<span>&gt;</span>輸入尺寸<span>(</span>需可包裹模型<span>)&gt;</span>選擇方塊原點</p>
+<p>編輯胚料基礎設定<span>(</span>視覺效果<span>)</span></p>
+<p>步驟：點擊可視化<span>&gt;</span>點擊胚料<span>&gt;</span>更改透明度<span>&gt;</span>右鍵隱藏方塊</p>
+<p><span> </span><span>9.1.2</span>設置加工環境</p>
+<p>進入製造模組</p>
+<p>步驟：選擇文件<span>&gt;</span>新建<span>&gt;</span>製造<span>&gt;</span>銑削</p>
+<p>設定銑削環境</p>
+<p><span> </span><span>9.1.3</span>操作導航器</p>
+<p>講解操作導航器的位置及使用方法</p>
+<p>步驟：資源欄<span>&gt;</span>操作導航器<span>&gt;</span>分類<span>(</span>程序順序、機床、幾何、加工方法<span>)</span></p>
+<p><span> </span><span>9.1.3</span>機器坐標系<span>(MCS)</span></p>
+<p>講解如何創建幾何體及座標<span>(MCS)</span></p>
+<p>及如何定義幾何體與定義的用處</p>
+<p>步驟：創建幾何體<span>&gt;</span>點選幾何體<span>&gt;</span>設置<span>MCS&gt;</span>點選<span>OK</span></p>
+<p><span> </span><span>9.2</span>創建工序</p>
+<p><span>9.2.1</span>創建新工序</p>
+<p>講解<span>3</span>軸加工機的各切削子工序用途及使用環境</p>
+<p>教導創建工序之步驟</p>
+<p>步驟：創建工序<span>&gt;</span>選擇<span>Mill_Contour&gt;</span>選擇子工序<span>&gt;</span>設置名稱<span>&gt;</span>更改幾何體<span>&gt;</span>點選<span>OK</span></p>
+<p><span> </span><span>9.2.2</span>刀具選擇與創建</p>
+<p>常用刀具類型介紹<br/>講解如何創建即設定刀具</p>
+<p>步驟：新建刀具<span>&gt;</span>依照需求創建刀具<span>&gt;</span>設定刀具數值<span>&gt;</span>點擊<span>OK</span></p>
+<p><span> </span><span>9.2.3</span>刀具路徑設置</p>
+<p>介紹各種切削路徑及使用時機<br/>講解如何創立刀具</p>
+<p>步驟：切削模式<span>&gt;</span>選擇適當模式</p>
+<p><span> </span><span>9.2.4</span>跨距及殘留高度</p>
+<p>介紹跨距的定義及如何設定跨距的數值<br/>介紹殘留高度及講解如何定義殘留高度的值</p>
+<p>步驟：步距<span>&gt;</span>輸入數值<span>&gt;</span>設定殘留高度百分比</p>
+<p><span> </span><span>9.2.5</span>每刀切削深</p>
+<p>講解及介紹切削深，並教導如何定義</p>
+<p>步驟：切削深度<span>&gt;</span>設定數值</p>
+<p><span> </span><span>9.2.6</span>切削參數</p>
+<p>設定切割優先度使軟體將切削最佳化<br/>介紹切削參數各選項的用途</p>
+<p>步驟：切削參數<span>&gt;</span>設定優先度<span>&gt;</span>更改其餘選項<span>&gt;</span>點擊<span>OK</span></p>
+<p><span> </span><span>9.2.7</span>非切削移動</p>
+<p>設定及講解功能，設定換刀點</p>
+<p>步驟：非切削移動<span>&gt;</span>從起點<span>(</span>設定換刀點<span>)&gt;</span>輸入數值<span>&gt;</span>點擊<span>OK</span></p>
+<p><span> </span><span>9.2.8</span>速度與進給</p>
+<p>講解進給與速度的關係，並教導如何設定</p>
+<p>步驟：進給率與速度<span>&gt;</span>設定進給<span>&gt;</span>設定主軸速度<span>&gt;</span>點選計算機按鈕<span>&gt;</span>點擊<span>OK</span></p>
+<p><span> </span><span>9.3</span>程序生成和驗證</p>
+<p><span>9.3.1</span>生成程序</p>
+<p>教導操作步驟及講解生成出的各個顏色標記的涵義</p>
+<p>步驟：點選生成圖標<span>&gt;</span>觀察顏色</p>
+<p><span> </span><span>9.3.2</span>刀具路徑顯示</p>
+<p>講解如何觀看刀具路徑</p>
+<p>步驟：操作<span>&gt;</span>點擊該程序</p>
+<p><span> </span><span>9.3.3</span>刀具路徑模擬</p>
+<p>檢查程序避免錯誤造成機台損壞</p>
+<p>步驟：操作導航器<span>&gt;</span>該程序<span>&gt;</span>工具路徑<span>&gt;</span>驗證<span>&gt;</span>點擊播放圖標<span>&gt;</span>更改動作數及精細度<span>&gt;</span>觀察模擬</p>
+<p><span> </span><span>9.3.4</span>銑削檢查</p>
+<p>檢查刀具是否確實切削無剩餘材料</p>
+<p>步驟：程序<span>&gt;</span>工具路徑<span>&gt;</span>銑削檢查<span>&gt;</span>點擊<span>OK&gt;</span>檢查後關閉窗口</p>
+<p><span> </span><span>9.4</span>操作方法</p>
+<p><span>9.4.1</span>粗加工</p>
+<p>對於銑削操作，在完成作業之前，首先應進行粗銑削。</p>
+<p>粗加工的主要目的是以更快的速度去除物料，不影響完成品準確性並給予下個工序足夠的餘料</p>
+<p><span> </span><span>9.4.2</span>半精加工</p>
+<p>消除因粗加工引起的不均勻，教導並設置半精加工工序。</p>
+<p><span> </span><span>9.4.3</span>整理概況</p>
+<p>整理程序應生成零件的表面因此，最好創建多個程序以獨特方式加工具有相關切削參數和策略的表面集。</p>
+<p><span> </span><span>9.4.3.1</span>外部輪廓</p>
+<p>教導如何操作及設置修整壁部分及平面之工序。</p>
+<p><span> </span><span>9.4.3.2</span>內部輪廓</p>
+<p>重複上一步驟工序，但更改修剪區域及範圍。</p>
+<p><span> </span><span>9.4.4</span>修整輪廓表面</p>
+<p>教導如何建立切削曲面之工序，及細部說明。</p>
+<p><span> </span><span>9.4.5</span>地板<span>(</span>最低平面<span>)</span></p>
+<p>講解及教導如何修整平面。</p>
+<p><span> </span><span>9.5</span>後期處理</p>
+<p>製造應用程序的主要用途是生成製造的工具路徑，但是，我們通常不能僅將未修改的刀具路徑文件發送到機器並開始切割，因為有許多不同類型的機器，每種機器都有獨特的硬件功能，要求和控制系統。</p>
+<p>修改過程稱為後處理。<br/>生成最終的後加工刀具路徑涉及兩個步驟。</p>
+<p><span>1.</span>創建刀具路徑數據文件，或稱為<span>CLSF</span>（刀具位置源文件）。</p>
+<p><span>2.</span>將<span>CLSF</span>後處理為機器<span>CNC</span>代碼（後處理文件）。該程序讀取工具路徑數據並將其重新格式化，以用於特定機器及其隨附工具控制器。</p>
+<p><span> </span><span>9.5.1</span>創建<span>CLSF</span></p>
+<p>生成並保存操作後，將生成的刀具路徑存儲為操作的一部分。<br/>在零件文件中<span>CLSF</span>（刀具位置源文件）提供了複製這些內部文件的方法。</p>
+<p>從零件文件中的操作到<span>CLSF</span>中的工具路徑（即文本文件）的路徑的<span>GOTO</span>值是當前刀具路徑的<span>“</span>快照<span>”</span>導出的值引用自操作中存儲的<span>MCS</span>。</p>
+<p>步驟：點擊輸出<span>CLSF&gt;</span>選擇格式<span>&gt;</span>選擇<span>CLSF_STANDARD&gt;</span>輸入文件的位置<span>&gt;</span>點擊<span>OK</span></p>
+<p><span> </span><span>9.5.2</span>後處理</p>
+<p>這將為目標工具機創建後處理文件。<br/>可以找到帶有與機器控制器類型有關的<span>G</span>和<span>M</span>代碼。文件的擴展名是<span>.ptp</span>。</p>
+<p>最終輸出（<span>filename.ptp</span>）文件可以傳輸到用於進行實際銑削的機器操作：</p>
+<p>步驟：菜單<span>&gt;</span>工具<span>&gt;</span>操作導航器<span>&gt;</span>輸出<span>&gt;</span>後處理或從主頁選項卡<span>&gt;</span>選擇<span>MILL_3_AXIS</span>機器並輸入文件的位置<span>&gt;</span>點擊<span>OK</span></p>
+<p></p><br />CHAPTER 8 – FINITE ELEMENT ANALYSIS << <a href='CHAPTER 8 – FINITE ELEMENT ANALYSIS.html'>Previous</a> </div>
         
     <!-- footer -->
       <div class="container">
