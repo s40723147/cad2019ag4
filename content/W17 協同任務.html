@@ -156,6 +156,21 @@ img.add_border {
         </header>
     <div id="tipue_search_content">member << <a href='member.html'>Previous</a> <a href='Solvespace.html'>Next</a> >> Solvespace<br /><h1>W17 協同任務</h1>
 <h4><span style="text-decoration: underline;"><strong>Building a clean model tutorial</strong></span></h4>
+<p>-----------------------------------------------------------------------------------</p>
+<p>建立可見的模型<strong>                                            <span style="background-color: #00ffff;">  Author: 40723137</span></strong></p>
+<p><br/>點選菜單&gt;添加&gt;基本形狀 在CoppeliaSim建立基本模型<br/>建立時有兩項選擇可選：<br/>純形狀：針對動態進行優化，也可啟用動態應用<br/>基本形狀：為簡單的網格，較無精確度<br/>過於複雜的形狀會使模型計算速度緩慢</p>
+<p>上圖有上萬個三角形架構，有如此多三角形的原因是有些細小特徵所導致的，可透過刪除簡化他們，CoppeliaSim支持OBJ，STL，DXF，3DS（僅Windows）和Collada。還支持URDF</p>
+<p>盡可能簡化後若還是太多網格，可使用其他農具進行近一步簡化<br/>自動網格劃分：<br/>可透過菜單&gt;編輯&gt;分組/合併&gt;分割所選形狀使用，若分割太多則可以使用合併接合回一個形狀</p>
+<p>提取凸包：<br/>通過將模型轉換為凸包來簡化<br/>使用步驟：菜單&gt;編輯&gt;將選擇模型轉化為凸包</p>
+<p>抽取網格：<br/>減少三角形網格的量<br/>使用步驟：菜單&gt;編輯&gt;縮小所選形狀</p>
+<p>刪除網格內部：<br/>透過刪除內部來簡化網格數<br/>使用步驟：菜單&gt;編輯&gt;提取所選形狀的內部</p>
+<p>範例：<br/>先將模型就行網格抽取，將三角形數量除以50，並提取內部形狀並丟棄</p>
+<p>再使用自動或手動進行網格劃分<br/>再進一步簡化單獨形狀<br/>因為有孔特徵因此較難簡化，這種強況下可使用形狀編輯模式，可以在這個模式中忽略一些三角形，可以先提取3個類似元素，以便在形狀編輯中可切換可見行圖層查看場景內容</p>
+<p>得到形狀總和後，分別提取凸包，擦除作為孔的小部分三角形後進行合併</p>
+<p>在CoppeliaSim中可以啟用/禁用每種形狀邊緣顯示，也可以更改顏色讓使用者更好辨識<br/>接著合併相同屬性(同特性)可透過編成更改顏色方便操作接著使用 菜單&gt;分組/合併&gt;分組所選形狀對同一鏈接的形狀分組</p>
+<p>創建或修改形狀時，CoppeliaSim將自動設置其參考框架的位置和方向。<br/>形狀的參考框架將始終位於形狀的幾何中心。選擇框架方向，以便形狀的邊界框保持盡可能小。<br/>我們也隨時可以隨時調整形狀的參考框架的方向。現在可以使用[菜單欄-&gt;編輯-&gt;重定向邊界框-&gt;使用世界參考框架]重新調整所有已創建形狀的參考框架。</p>
+<p><img alt="" height="230" src="./../images/modelTut1.jpg" width="67"/><img alt="" height="213" src="./../images/modelTut2.jpg" width="423"/></p>
+<p>***************************************************************</p>
 <p><span><strong>Building the dynamic shapes                                            <span style="background-color: #00ffff;"><strong>  Author: 40723147</strong></span></strong></span></p>
 <h4>建立動態形狀</h4>
 <p>If we want our robot to be dynamically enabled, i.e. react to collisions, fall, etc., then we need to create/configure the shapes appropriately: a shape can be:         <img alt="cool" src="https://s40723147.github.io/cad2019/cmsimde/static/tinymce4/tinymce/plugins/emoticons/img/smiley-cool.gif"/></p>
